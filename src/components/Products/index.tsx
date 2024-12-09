@@ -3,7 +3,7 @@ import SectionTitle from "../Common/SectionTitle";
 
 const Products = () => {
   return (
-    <section className="relative z-10 py-16 md:py-20 lg:py-28">
+    <section id="products" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
           title="Datum Ads Boards Platform"
