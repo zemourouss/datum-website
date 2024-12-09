@@ -9,10 +9,10 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
+                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight" data-aos="fade-down">
                   Unlocking Excellence: Your Trusted Partner in Innovation
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl" data-aos="fade-up">
                   The quest for operational efficiency, sustainability, and
                   intelligent processes is more crucial than ever. Across
                   industries, organizations are seeking innovative solutions to
@@ -22,7 +22,7 @@ const Hero = () => {
                   visionary pioneers looking to transform your sector, we are
                   your strategic ally, ready to help you achieve your goals.
                 </p>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
+                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl" data-aos="fade-up">
                   At Datum technology, we understand the unique challenges faced
                   by large enterprises across various industries. Staying
                   competitive in a dynamic market demands continuous innovation

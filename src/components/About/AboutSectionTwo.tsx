@@ -8,27 +8,18 @@ const AboutSectionTwo = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <SectionTitle title="How We Work" paragraph="" mb="64px" />
-            <div
-              className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0"
-              data-wow-delay=".15s"
-            >
-              <Image
-                src="/images/about/about-image-2.svg"
-                alt="about image"
-                fill
-                className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-              />
+            <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
               <Image
                 src="/images/about/about-image-2-dark.svg"
                 alt="about image"
                 fill
-                className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                data-aos="zoom-in-right"
               />
             </div>
           </div>
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
-              <div className="mb-9">
+              <div className="mb-9" data-aos="fade-up">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Assessment
                 </h3>
@@ -38,7 +29,7 @@ const AboutSectionTwo = () => {
                   design solutions tailored to your unique needs.
                 </p>
               </div>
-              <div className="mb-9">
+              <div className="mb-9" data-aos="fade-up">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Solution Design
                 </h3>
@@ -48,7 +39,7 @@ const AboutSectionTwo = () => {
                   maximum value and effectiveness.
                 </p>
               </div>
-              <div className="mb-1">
+              <div className="mb-9" data-aos="fade-up">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Implementation
                 </h3>
@@ -59,7 +50,7 @@ const AboutSectionTwo = () => {
                   the new tools effectively.
                 </p>
               </div>
-              <div className="mb-1">
+              <div className="mb-1" data-aos="fade-up">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                   Ongoing Support
                 </h3>
