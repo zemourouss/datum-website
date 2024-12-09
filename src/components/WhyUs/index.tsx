@@ -1,6 +1,6 @@
 import SectionTitle from "../Common/SectionTitle";
-import SingleFeature from "./SingleFeature";
-import featuresData from "./featuresData";
+import WhyUsItem from "./WhyUsItem";
+import whyUsData from "./whyUsData";
 
 const Features = () => {
   return (
@@ -8,14 +8,14 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <SectionTitle
-            title="Main Features"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            title="Why Choose Us?"
+            paragraph="At Datum, we're committed to delivering innovative solutions that make a real difference. Here's why we're the best choice for you"
             center
           />
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
-            {featuresData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
+            {whyUsData.map((item) => (
+              <WhyUsItem key={item.id} item={item} />
             ))}
           </div>
         </div>

@@ -1,7 +1,7 @@
-import { Feature } from "@/types/feature";
+import { WhyUsItem as Item } from "@/types/whyUsItem";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
+const WhyUsItem = ({ item }: { item: Item }) => {
+  const { icon, title, paragraph } = item;
   return (
     <div className="w-full">
       <div className="wow fadeInUp" data-wow-delay=".15s">
@@ -19,4 +19,4 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   );
 };
 
-export default SingleFeature;
+export default WhyUsItem;
