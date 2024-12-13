@@ -39,7 +39,15 @@ const Header = () => {
     e.stopPropagation();
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
+      const offset = 60;
+
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const targetPosition = elementPosition - offset;
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
