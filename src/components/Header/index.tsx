@@ -1,53 +1,41 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import menuData from "./menuData";
 
 const Header = () => {
+  const pathname = usePathname();
+  const router = useRouter();
+
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
-  };
+  const navbarToggleHandler = () => setNavbarOpen((prev) => !prev);
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
-  const handleStickyNavbar = () => {
-    if (window.scrollY >= 80) {
-      setSticky(true);
-    } else {
-      setSticky(false);
-    }
-  };
   useEffect(() => {
+    const handleStickyNavbar = () => setSticky(window.scrollY >= 80);
     window.addEventListener("scroll", handleStickyNavbar);
-  });
 
-  // submenu handler
-  const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
-    if (openIndex === index) {
-      setOpenIndex(-1);
-    } else {
-      setOpenIndex(index);
-    }
-  };
+    return () => window.removeEventListener("scroll", handleStickyNavbar);
+  }, []);
 
-  const handleScroll = (e, id: string) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();
-    e.stopPropagation();
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 60;
+    if (pathname === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        const offset = 60;
+        const targetPosition =
+          element.getBoundingClientRect().top + window.scrollY - offset;
 
-      const elementPosition =
-        element.getBoundingClientRect().top + window.scrollY;
-      const targetPosition = elementPosition - offset;
-      window.scrollTo({
-        top: targetPosition,
-        behavior: "smooth",
-      });
+        window.scrollTo({ top: targetPosition, behavior: "smooth" });
+      }
+    } else {
+      router.push(`/#${id}`);
     }
   };
 

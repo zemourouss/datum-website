@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
 import { Metadata } from "next";
 import Products from "@/components/Products";
+import HomeClient from "@/components/Header/HomeClient";
 
 export const metadata: Metadata = {
   title: "Datum",
@@ -23,6 +24,7 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
+      <HomeClient />
       <Hero />
       <Features />
       {/* <Video /> */}
