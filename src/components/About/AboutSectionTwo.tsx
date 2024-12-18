@@ -8,11 +8,13 @@ const AboutSectionTwo = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-1/2">
             <SectionTitle title="How We Work" paragraph="" mb="64px" />
-            <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
+            <div className="relative mx-auto mb-12 max-w-[500px] text-center lg:m-0">
               <Image
-                src="/images/about/image2.png"
+                src="/images/about/image.png"
                 alt="about image"
-                fill
+                layout="responsive"
+                width={1200}
+                height={800}
                 data-aos="zoom-in-right"
               />
             </div>
