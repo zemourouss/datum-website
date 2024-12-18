@@ -10,7 +10,7 @@ const AboutSectionTwo = () => {
             <SectionTitle title="How We Work" paragraph="" mb="64px" />
             <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
               <Image
-                src="/images/about/about-image-2-dark.svg"
+                src="/images/about/image2.png"
                 alt="about image"
                 fill
                 data-aos="zoom-in-right"
