@@ -1,12 +1,14 @@
 const SectionTitle = ({
   title,
   paragraph,
+  paragraph2,
   width = "570px",
   center,
   mb = "100px",
 }: {
   title: string;
   paragraph: string;
+  paragraph2?: string;
   width?: string;
   center?: boolean;
   mb?: string;
@@ -26,6 +28,14 @@ const SectionTitle = ({
         >
           {paragraph}
         </p>
+        {paragraph2 && (
+          <p
+            className="text-base !leading-relaxed text-body-color md:text-lg mt-4"
+            data-aos="fade-up"
+          >
+            {paragraph2}
+          </p>
+        )}
       </div>
     </>
   );

@@ -28,7 +28,8 @@ const AboutSectionOne = () => {
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Innovative Solutions to Accelerate Your Business Growth."
-                paragraph="At Datum, we specialize in delivering tailored solutions designed to help businesses like yours thrive in today’s fast-paced digital world. Whether you're looking to streamline operations, enhance your online presence, or build a sustainable growth strategy, our expert team is here to guide you every step of the way."
+                paragraph="Founded in 2023, Datum is a Dubai-based registered company committed to innovation and excellence. Our deep industry expertise and customer-centric approach enable us to create impactful digital solutions that drive measurable success."
+                paragraph2="At Datum, we specialize in delivering tailored solutions designed to help businesses like yours thrive in today’s fast-paced digital world. Whether you're looking to streamline operations, enhance your online presence, or build a sustainable growth strategy, our expert team is here to guide you every step of the way."
                 mb="44px"
               />
 

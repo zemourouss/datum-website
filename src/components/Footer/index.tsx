@@ -31,6 +31,10 @@ const Footer = () => {
                   offering comprehensive solutions that empower you to excel, no
                   matter your field.
                 </p>
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
+                  <strong>Address:</strong> 38883-001, IFZA Business Park, DDP,
+                  Dubai, UAE
+                </p>
               </div>
             </div>
 
@@ -45,7 +49,7 @@ const Footer = () => {
                       href="/about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      About us
                     </Link>
                   </li>
                   <li>
